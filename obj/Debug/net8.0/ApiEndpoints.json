@@ -1,0 +1,203 @@
+[
+  {
+    "ContainingType": "SchoolsProject.Controllers.GovernorateController",
+    "Method": "GetGovernarate",
+    "RelativePath": "api/Governorate/GetGovernarate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.RegionsController",
+    "Method": "GetRegionsBasedOnGovernarate",
+    "RelativePath": "api/Regions/GetRegions/{GovernorateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GovernorateId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolCommentsController",
+    "Method": "PostSchoolComments",
+    "RelativePath": "api/SchoolComments/CreateSchoolComment/{schoolid}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentdto",
+        "Type": "SchoolsProject.Models.DTOs.CreateCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolCommentsController",
+    "Method": "GetSchoolComment",
+    "RelativePath": "api/SchoolComments/GetSchoolComment/{schoolid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolCommentsController",
+    "Method": "GetTotalComments",
+    "RelativePath": "api/SchoolComments/GetTotalComments/{schoolid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolsController",
+    "Method": "PostSchool",
+    "RelativePath": "api/Schools/CreateSchool",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SchoolsProject.Models.DTOs.createSchoolDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolsController",
+    "Method": "GetSchool",
+    "RelativePath": "api/Schools/GetSchool",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolsController",
+    "Method": "GetSchool",
+    "RelativePath": "api/Schools/GetSchool/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolsController",
+    "Method": "SearchByName",
+    "RelativePath": "api/Schools/search/{schoolname}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolname",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolsController",
+    "Method": "SearchByGovernorate",
+    "RelativePath": "api/Schools/searchbygovernorate/{governoratename}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "governoratename",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.SchoolsController",
+    "Method": "SearchByRegion",
+    "RelativePath": "api/Schools/searchbyregion/{regionName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "regionName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.StarRatingController",
+    "Method": "PostRating",
+    "RelativePath": "api/StarRating/addRating",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rating",
+        "Type": "SchoolsProject.Models.StarRating",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolsProject.Controllers.StarRatingController",
+    "Method": "GetAverageRating",
+    "RelativePath": "api/StarRating/AverageRating/{schoolid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
