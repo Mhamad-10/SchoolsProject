@@ -12,7 +12,7 @@ namespace SchoolsProject.Controllers
     public class SchoolsController(AppDbContext db) : ControllerBase
     {
 
-        //Get all Schools
+        //Get all Schoolsss
         [HttpGet("GetSchool")]
         public async Task<IActionResult> GetSchool()
         {
